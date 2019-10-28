@@ -178,9 +178,9 @@ static void generate_testvectors(argon2_type type, const uint32_t version) {
 
     argon2_ctx(&context, type);
 }
-
+/*
 int main(int argc, char *argv[]) {
-    /* Get and check Argon2 type */
+
     const char *type_str = (argc > 1) ? argv[1] : "i";
     argon2_type type = Argon2_i;
     uint32_t version = ARGON2_VERSION_NUMBER;
@@ -194,7 +194,7 @@ int main(int argc, char *argv[]) {
         fatal("wrong Argon2 type");
     }
 
-    /* Get and check Argon2 version number */
+
     if (argc > 2) {
         version = strtoul(argv[2], NULL, 10);
     }
@@ -205,3 +205,4 @@ int main(int argc, char *argv[]) {
     generate_testvectors(type, version);
     return ARGON2_OK;
 }
+*/
